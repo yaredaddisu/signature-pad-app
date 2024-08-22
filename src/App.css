@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.registration-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.form-group {
+   margin: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group label {
+  display: block;
+ 
+  font-weight: bold;
+  
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+}
+
+.sigCanvas {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+textarea {
+  width: 100%;            /* Full width */
+  max-width: 100%;        /* Prevents the textarea from exceeding its container */
+  height: 80px;          /* Set the height */
+  padding: 10px;          /* Space inside the textarea */
+  border: 1px solid #ccc; /* Border color and size */
+  border-radius: 5px;     /* Rounded corners */
+  font-size: 16px;        /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+  resize: vertical;       /* Allow vertical resizing, but not horizontal */
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Subtle inner shadow */
+  background-color: #f9f9f9; /* Background color */
+  color: #333;            /* Text color */
+}
+
+textarea:focus {
+  border-color: #66afe9;  /* Border color when focused */
+  outline: none;          /* Remove the default outline */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Focused shadow effect */
 }
